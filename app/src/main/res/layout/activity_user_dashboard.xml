@@ -29,25 +29,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+
             <ImageView
                 android:id="@+id/menu_icon"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_centerVertical="true"
                 android:src="@drawable/menu" />
 
-            
+            <ImageView
+                android:id="@+id/plus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="40dp"
+                android:onClick="callRetailerScreen"
+                android:layout_marginBottom="40dp"
+                android:src="@drawable/plus" />
 
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
+                android:layout_marginRight="-2dp"
                 android:background="@color/banner_background"
                 android:padding="5dp"
                 android:src="@drawable/cart" />
-
-
 
 
         </RelativeLayout>

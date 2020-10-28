@@ -25,6 +25,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.example.myapp.Common.LoginSignup.RetailerStartupScreen;
 import com.example.myapp.HelperClasses.HomeAdapter.CategoriesAdapter;
 import com.example.myapp.HelperClasses.HomeAdapter.CategoriesHelperClass;
 import com.example.myapp.HelperClasses.HomeAdapter.FeaturedAdapter;
@@ -232,6 +233,9 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
 
         GradientDrawable gradient1 = new GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT,new int[]{0xffeff400,0xffaff600});
 
+    }
+    public void callRetailerScreen(View view){
+        startActivity(new Intent(getApplicationContext(), RetailerStartupScreen.class));
     }
 
     private void mostViewedRecycler() {
