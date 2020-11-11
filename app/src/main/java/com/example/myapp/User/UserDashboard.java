@@ -34,6 +34,8 @@ import com.example.myapp.HelperClasses.HomeAdapter.MostViewedAdapter;
 import com.example.myapp.HelperClasses.HomeAdapter.MostViewedHelperClass;
 import com.example.myapp.R;
 import com.example.myapp.Settings;
+import com.example.myapp.User.Activities.cart;
+import com.example.myapp.User.Activities.shops;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
@@ -51,7 +53,7 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
 
 
 
-    ImageView menuIcon;
+    ImageView menuIcon,cart;
     LinearLayout contentView;
     RelativeLayout c1;
     TextView t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14;
@@ -72,6 +74,7 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         categoriesRecycler = findViewById(R.id.categories_recycler);
         menuIcon = findViewById(R.id.menu_icon);
         contentView = findViewById(R.id.content);
+        cart=findViewById(R.id.cart);
 
         t1  = findViewById(R.id.app_name);
         t2  = findViewById(R.id.text1);
@@ -105,11 +108,88 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         categoriesRecycler();
         Load_settings();
 
+        t2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(UserDashboard.this,
+                        com.example.myapp.User.Activities.shops.class);
+                intent.putExtra("shop","shop1");
+                startActivity(intent);
+            }
+        });
+        t3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(UserDashboard.this,
+                        com.example.myapp.User.Activities.shops.class);
+                intent.putExtra("shop","shop2");
+                startActivity(intent);
+            }
+        });
+        t4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(UserDashboard.this,
+                        com.example.myapp.User.Activities.shops.class);
+                intent.putExtra("shop","shop3");
+                startActivity(intent);
+            }
+        });
+        t5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(UserDashboard.this,
+                        com.example.myapp.User.Activities.shops.class);
+                intent.putExtra("shop","shops");
+                startActivity(intent);
+            }
+        });
+        t6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(UserDashboard.this,
+                        com.example.myapp.User.Activities.shops.class);
+                intent.putExtra("shop","shop4");
+                startActivity(intent);
+            }
+        });
+        t7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(UserDashboard.this,
+                        com.example.myapp.User.Activities.shops.class);
+                intent.putExtra("shop","shop5");
+                startActivity(intent);
+            }
+        });
+        t8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(UserDashboard.this,
+                        com.example.myapp.User.Activities.shops.class);
+                intent.putExtra("shop","shop6");
+                startActivity(intent);
+            }
+        });
+        t9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(UserDashboard.this,
+                        com.example.myapp.User.Activities.shops.class);
+                intent.putExtra("shop","shop7");
+                startActivity(intent);
+            }
+        });
 
-
-
-
-
+        cart.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(UserDashboard.this,
+                        com.example.myapp.User.Activities.cart.class);
+                intent.putExtra("cart","Your Cart");
+                startActivity(intent);
+            }
+        });
     }
     private void Load_settings(){
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);

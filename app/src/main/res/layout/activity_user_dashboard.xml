@@ -46,12 +46,14 @@
                 android:src="@drawable/plus" />
 
             <ImageView
+                android:id="@+id/cart"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="-2dp"
                 android:background="@color/banner_background"
                 android:padding="5dp"
+                android:clickable="true"
                 android:src="@drawable/cart" />
 
 
@@ -145,6 +147,7 @@
                             android:gravity="center_horizontal"
                             android:text="@string/shop1"
                             android:textAlignment="center"
+                            android:clickable="true"
                             android:textColor="@color/textColor"/>
 
                     </LinearLayout>
@@ -175,6 +178,7 @@
                             android:gravity="center_horizontal"
                             android:text="@string/shop2"
                             android:textAlignment="center"
+                            android:clickable="true"
                             android:textColor="@color/textColor"/>
 
                     </LinearLayout>
@@ -205,6 +209,7 @@
                             android:gravity="center_horizontal"
                             android:text="@string/shop3"
                             android:textAlignment="center"
+                            android:clickable="true"
                             android:textColor="@color/textColor"/>
 
                     </LinearLayout>
@@ -235,6 +240,7 @@
                             android:gravity="center_horizontal"
                             android:text="@string/shops"
                             android:textAlignment="center"
+                            android:clickable="true"
                             android:textColor="@color/textColor"/>
 
                     </LinearLayout>
@@ -273,6 +279,7 @@
                             android:gravity="center_horizontal"
                             android:text="@string/shop4"
                             android:textAlignment="center"
+                            android:clickable="true"
                             android:textColor="@color/textColor"/>
 
                     </LinearLayout>
@@ -303,6 +310,7 @@
                             android:gravity="center_horizontal"
                             android:text="@string/shop5"
                             android:textAlignment="center"
+                            android:clickable="true"
                             android:textColor="@color/textColor"/>
 
                     </LinearLayout>
@@ -333,6 +341,7 @@
                             android:gravity="center_horizontal"
                             android:text="@string/shop6"
                             android:textAlignment="center"
+                            android:clickable="true"
                             android:textColor="@color/textColor"/>
 
                     </LinearLayout>
@@ -363,6 +372,7 @@
                             android:gravity="center_horizontal"
                             android:text="@string/shop7"
                             android:textAlignment="center"
+                            android:clickable="true"
                             android:textColor="@color/textColor"/>
 
                     </LinearLayout>
@@ -446,6 +456,7 @@
                             android:layout_centerVertical="true"
                             android:layout_marginRight="15dp"
                             android:text="@string/view_all"
+                            android:clickable="true"
                             android:textColor="@color/textColor"/>
 
 
