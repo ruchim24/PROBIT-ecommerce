@@ -92,23 +92,40 @@
                         android:layout_marginRight="40dp"
                         android:layout_marginBottom="20dp"
                         android:background="@color/white"
-                        android:elevation="8dp">
+                        android:elevation="8dp"
+                        tools:context="com.example.myapp.User.UserDashboard">
 
-                        <TextView
+                       <!-- <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:layout_marginLeft="15dp"
                             android:text="@string/search_text"
-                            android:textColor="@color/textColor"></TextView>
+                            android:textColor="@color/textColor"></TextView> -->
 
-                        <ImageView
+                       <!-- <ImageView
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_alignParentRight="true"
                             android:layout_centerVertical="true"
                             android:layout_marginRight="15dp"
-                            android:src="@drawable/search" />
+                            android:src="@drawable/search" /> -->
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/lv1"
+                            android:divider="#ad5"
+                            android:dividerHeight="2dp"
+                            android:layout_below="@+id/searchView"/>
+
+                        <SearchView
+                            android:id="@+id/searchView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:queryHint="Search Here"
+                            android:iconifiedByDefault="false"
+                            android:layout_alignParentTop="true"
+                            />
 
 
                     </RelativeLayout>
