@@ -116,7 +116,7 @@
                             android:id="@+id/lv1"
                             android:divider="#ad5"
                             android:dividerHeight="2dp"
-                            android:layout_below="@+id/searchView"/>
+                            android:layout_below="@id/searchView"/>
 
                         <SearchView
                             android:id="@+id/searchView"

@@ -92,6 +92,7 @@ public class UserDashboard extends AppCompatActivity implements NavigationView.O
         t12 = findViewById(R.id.text11);
         t13 = findViewById(R.id.text12);
 
+
         searchView = (SearchView) findViewById(R.id.searchView);
         listView = (ListView) findViewById(R.id.lv1);
 
