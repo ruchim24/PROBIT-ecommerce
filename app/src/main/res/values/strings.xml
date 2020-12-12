@@ -58,4 +58,14 @@
     <string name="forget_password">Forget Password</string>
     <string name="shop_discription">shop description will show here</string>
 
+    <string name="otp_code_text">Co\nde</string>
+    <string name="otp_verification_text">Verification</string>
+    <string name="otp_description_text">Enter One Time Password Sent On +913332225554</string>
+
+    <string name="enter_full_name">Full Name</string>
+    <string name="enter_username">Username</string>
+    <string name="enter_email">Email</string>
+    <string name="enter_phone_number">Phone Number</string>
+    <string name="enter_password">Password</string>
+
 </resources>

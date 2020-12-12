@@ -72,7 +72,7 @@ public class Signup extends AppCompatActivity {
 
     private boolean validateUsername() {
         String val = username.getEditText().getText().toString().trim();
-        String checkspaces = "Aw{1,20}z";
+        String checkspaces = "\\A\\w{1,20}\\z";
 
         if (val.isEmpty()) {
             username.setError("Field can not be empty");
@@ -109,23 +109,25 @@ public class Signup extends AppCompatActivity {
 
     private boolean validatePassword() {
         String val = password.getEditText().getText().toString().trim();
-        String checkPassword = "^" +
-                //"(?=.*[0-9])" +         //at least 1 digit
-                //"(?=.*[a-z])" +         //at least 1 lower case letter
-                //"(?=.*[A-Z])" +         //at least 1 upper case letter
-                "(?=.*[a-zA-Z])" +      //any letter
-                //"(?=.*[@#$%^&+=])" +    //at least 1 special character
-                "(?=S+$)" +           //no white spaces
-                ".{4,}" +               //at least 4 characters
-                "$";
+//        String checkPassword = "^" +
+//                //"(?=.*[0-9])" +         //at least 1 digit
+//                //"(?=.*[a-z])" +         //at least 1 lower case letter
+//                //"(?=.*[A-Z])" +         //at least 1 upper case letter
+//                "(?=.*[a-zA-Z])" +      //any letter
+//                //"(?=.*[@#$%^&+=])" +    //at least 1 special character
+//                "(?=S+$)" +           //no white spaces
+//                ".{4,}" +               //at least 4 characters
+//                "$";
 
         if (val.isEmpty()) {
             password.setError("Field can not be empty");
             return false;
-        } else if (!val.matches(checkPassword)) {
-            password.setError("Password should contain 4 characters!");
-            return false;
-        } else {
+       }
+//        else if (!val.matches(checkPassword)) {
+//            password.setError("Password should contain 4 characters!");
+//            return false;
+//        }
+        else {
             password.setError(null);
             password.setErrorEnabled(false);
             return true;
