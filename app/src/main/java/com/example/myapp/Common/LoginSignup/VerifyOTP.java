@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.chaos.view.PinView;
 import com.example.myapp.Databases.UserHelperClass;
 import com.example.myapp.R;
+import com.example.myapp.User.UserDashboard;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.TaskExecutors;
@@ -131,10 +132,9 @@ public class VerifyOTP extends AppCompatActivity {
         UserHelperClass addNewUser = new UserHelperClass(fullName, username, email, phoneNo, password, date, gender);
         reference.child(phoneNo).setValue(addNewUser);
 
-        //We will also create a Session here in next videos to keep the user logged In
 
-//        startActivity(new Intent(getApplicationContext(), RetailerDashboard.class));
-//        finish();
+
+
     }
 
 
@@ -148,5 +148,7 @@ public class VerifyOTP extends AppCompatActivity {
         if(!code.isEmpty()){
             verifyCode(code);
         }
+        startActivity(new Intent(getApplicationContext(), UserDashboard.class));
+        finish();
     }
 }
