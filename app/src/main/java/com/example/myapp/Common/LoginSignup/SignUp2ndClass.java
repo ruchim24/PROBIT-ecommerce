@@ -55,7 +55,17 @@ public class SignUp2ndClass extends AppCompatActivity {
 
          String date = day+"/"+month+"/"+year;
 
+         String _fullName = getIntent().getStringExtra("fullName");
+
+         String _email = getIntent().getStringExtra("email");
+         String _password = getIntent().getStringExtra("password");
+
         Intent intent = new Intent(getApplicationContext(), SignUp3rdClass.class);
+        intent.putExtra("fullName",_fullName);
+        intent.putExtra("email",_email);
+        intent.putExtra("password",_password);
+        intent.putExtra("date",date);
+        intent.putExtra("gender",_gender);
 
 
         //Add Transition and call next activity

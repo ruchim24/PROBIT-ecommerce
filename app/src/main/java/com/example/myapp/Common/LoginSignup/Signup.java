@@ -45,8 +45,14 @@ public class Signup extends AppCompatActivity {
         if (!validateFullName() | !validateUsername() | !validateEmail() | !validatePassword()) {
             return;
         }
+        String _fullName = fullName.getEditText().getText().toString();
+        String _email = email.getEditText().getText().toString();
+        String _password = password.getEditText().getText().toString();
 
         Intent intent = new Intent(getApplicationContext(),SignUp2ndClass.class);
+        intent.putExtra("fullName",_fullName);
+        intent.putExtra("email",_email);
+        intent.putExtra("password",_password);
         Pair[] pairs = new Pair[4];
         pairs[0] = new Pair<View,String>(backBtn,"transition_back_btn");
         pairs[1] = new Pair<View,String>(next,"transition_next_btn");
